@@ -9,6 +9,7 @@
   require 'path/to/PHPMailer/src/PHPMailer.php';
   require 'path/to/PHPMailer/src/SMTP.php';
   */
+
   require 'vendor/autoload.php';
 
   $email = 'example@example.com'; // Account/email with Google Auth
@@ -52,7 +53,7 @@
 
     $mail->send();
 
-    $message = (!$mail->send()) ? 'Error: Somthing wrong with email send' : 'Success: Form send!';
+    $message = (!$mail->send()) ? "Error: Somthing wrong with email send {$mail->ErrorInfo}" : 'Success: Form send!';
     $response = ['message' => $message];
 
     header('Content-Type: application/json');
