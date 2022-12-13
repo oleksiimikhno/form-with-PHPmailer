@@ -1,5 +1,5 @@
 <?php
-  // ini_set('display_errors', '1'); // Display errors
+  ini_set('display_errors', '1'); // Display errors
   use PHPMailer\PHPMailer\PHPMailer;
   use PHPMailer\PHPMailer\Exception;
 
@@ -34,7 +34,7 @@
 
     $mail->isHTML(true);
 
-    $mail->Subject = 'Message from form site: ' .$_POST['email'];
+    $mail->Subject = 'Message from form: ' .$_POST['email'];
 
     $body = '<h1>New message</h1>';
     if (trim(!empty(['email']))){

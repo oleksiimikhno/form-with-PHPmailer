@@ -7,7 +7,7 @@
   <title>Send new message to email</title>
 </head>
 <body>
-  <form action="email.php" method="post">
+  <form class="form" action="email2.php" method="post">
     <div class="input-group">
       <label for="email">Email:</label>
       <input type="email" name="email" id="email" value="">
@@ -18,9 +18,10 @@
     </div>
     <div class="input-group">
       <label for="message">Message:</label>
-      <input type="text" id="message" name="message" value="">
+      <textarea id="message" name="message" value=""></textarea>
     </div>
     <button type="submit" name="send">Send</button>
   </form>
 </body>
+<script defer src="./js/form.js"></script>
 </html>
