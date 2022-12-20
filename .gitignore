@@ -4,5 +4,9 @@
 composer.lock
 composer.json
 
+## Ignore npm package
+node_modules
+package-lock.json
+
 ## test email.php
 email2.php
