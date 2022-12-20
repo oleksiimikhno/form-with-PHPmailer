@@ -2,6 +2,6 @@
 
 import "./style/scss/default.scss";
 
-import form from './js/form';
+import sendForm from './js/form';
 
-form();
+sendForm();

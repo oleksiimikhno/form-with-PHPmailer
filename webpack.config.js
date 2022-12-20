@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const miniCss = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -8,8 +9,8 @@ module.exports = {
     devtool: 'inline-source-map',
     devServer: {
         static: './dist',
+        port: 8080,
     },
-
     module: {
         rules: [{
             test:/\.(s*)css$/,
@@ -29,8 +30,13 @@ module.exports = {
             chunks: ['main']
         }),
         new miniCss({
-            filename: 'default.css',
+            filename: './style/default.css',
         }),
+        new CopyPlugin({
+            patterns: [
+                { from: './src/controller', to: 'controller' }
+            ],
+        })
     ],
     output: {
         filename: '[name].js',
