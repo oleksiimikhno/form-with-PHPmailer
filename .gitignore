@@ -2,9 +2,7 @@
 src/controller/vendor
 src/controller/composer.*
 src/controller/autoload.php
-dist
-dist/*.js
-dist/index.html
+dist/
 
 ## Ignore npm package
 node_modules
