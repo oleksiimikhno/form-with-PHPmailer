@@ -1,10 +1,7 @@
-function component() {
-  const element = document.createElement('div');
+'use strict';
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+import "./style/scss/default.scss";
 
-  return element;
-}
+import form from './js/form';
 
-document.body.appendChild(component());
+form();
