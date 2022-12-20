@@ -5,10 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Send new message to email</title>
-  <script src="./src/index.js"></script>
-<script defer src="runtime.js"></script><script defer src="main.js"></script><link href="default.css" rel="stylesheet"></head>
+<script defer src="runtime.js"></script><script defer src="main.js"></script><link href="./style/default.css" rel="stylesheet"></head>
 <body>
-  <form class="form" action="email2.php" method="post">
+  <form class="form" action="controller/email2.php" method="post">
     <div class="input-group">
       <label for="email">Email:</label>
       <input type="email" name="email" id="email" value="">
@@ -24,5 +23,4 @@
     <button type="submit" name="send">Send</button>
   </form>
 </body>
-<script defer src="./js/form.js"></script>
 </html>

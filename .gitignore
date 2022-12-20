@@ -1,8 +1,10 @@
 ## ignore composer and PHPmailer file
-/vendor/*
-
-composer.lock
-composer.json
+src/controller/vendor
+src/controller/composer.*
+src/controller/autoload.php
+dist
+dist/*.js
+dist/index.html
 
 ## Ignore npm package
 node_modules
