@@ -7,6 +7,7 @@ module.exports = {
     mode: 'development',
     entry: './src/index.js',
     devtool: 'inline-source-map',
+    watch: true,
     devServer: {
         static: './dist',
         port: 8080,
