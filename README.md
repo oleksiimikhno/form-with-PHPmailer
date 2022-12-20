@@ -8,3 +8,8 @@
   - Account/email with Google Auth `$email = 'example@example.com';`
   - Generated and set your google app password `$password = 'password';`
   - Change to your smtp server if needed `$SMTPServer = 'smtp.gmail.com';`
+
+## webpack
+  - install modules npm `npm i`
+  - build `npm run build`
+  - run localhost:3000 `npm run server` to development
