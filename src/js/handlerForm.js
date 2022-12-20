@@ -32,10 +32,8 @@ export default function sendForm() {
     //     } catch(e) {
     //         // throw e;
     //     }
+    //
       };
-    
-    
-    
     
     
       const form = document.querySelector('.form');
@@ -50,7 +48,7 @@ export default function sendForm() {
             data[key] = value;
         });
         
-        request('./controller/email2.php', formData);
+        request('controller/email2.php', formData);
       }
     
       submitButton.addEventListener('click', () => submitForm(event));
