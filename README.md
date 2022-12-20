@@ -2,6 +2,7 @@
 
 ## Install and init composer with PHPmailer
   - Install composer on unix `sudo apt install composer`
+  - go to folder`cd /src/controller`
   - Install composer with PHPmailer `composer require phpmailer/phpmailer` in your project folder
 
 ## Change to your settings email
@@ -12,4 +13,4 @@
 ## webpack
   - install modules npm `npm i`
   - build `npm run build`
-  - run localhost:3000 `npm run server` to development
+  - run localhost:8080 `npm run server` to development
