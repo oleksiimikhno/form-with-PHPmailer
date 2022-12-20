@@ -2,6 +2,8 @@
 src/controller/vendor
 src/controller/composer.*
 src/controller/autoload.php
+
+## clear dist folder
 dist/
 
 ## Ignore npm package
